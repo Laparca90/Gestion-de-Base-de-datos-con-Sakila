@@ -1,0 +1,17 @@
+@startuml
+
+!theme plain
+top to bottom direction
+skinparam linetype ortho
+
+class CsvExporter
+class DBConnection
+class DataContext<T>
+class Film
+class FilmController
+class SakilaConsoleApp
+class Validator
+interface iDatapost<T> << interface >>
+
+DataContext       -[#008200,dashed]-^  iDatapost        
+@enduml
